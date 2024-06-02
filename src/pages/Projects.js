@@ -1,5 +1,5 @@
 import React from 'react';
-import MTBS from './34+ Movie Ticket Templates - PSD, AI, Word.jpeg'
+import MTBS from './movie.jpeg'
 import quiz from './Screenshot from 2024-06-02 11-34-16.png'
 const Projects = () => {
   return (
