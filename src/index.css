@@ -1,3 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item::after{
+  content: '';
+  display: block;
+  width:0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+}
+.nav-item:hover::after{
+  width: 50%;
+}
+
+.nav-active::after {
+  content: '';
+  display: block;
+  width:50%;
+  height: 2px;
+
+  
+  background: white;
+  transition: width .3s;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +37,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+/* .gallery-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+} */
+.gallery-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+.gallery-card > img {
+  
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.gallery-card:hover >img {
+  transform: scale(1.5);
 }

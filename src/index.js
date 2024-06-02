@@ -3,11 +3,40 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import About from './pages/About';
+import ExtendedNavbar from './components/ExtendedNavbar';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "/about",
+    element: <><ExtendedNavbar /><About /></>
+  },
+  {
+    path: "/education",
+    element: <><ExtendedNavbar/><Education/></>
+  },
+  {
+    path: "/projects",
+    element: <><ExtendedNavbar/><Projects/></>
+  },
+  {
+    path: "/skills",
+    element: <><ExtendedNavbar /><Skills /></>
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
