@@ -6,7 +6,7 @@ const Skills = () => {
     <div>
       <div className="h-screen bg-[#010e1b] text-white flex flex-col items-center pt-8">
         <div className=" flex flex-col align-middle justify-center gap-10  w-2/5">
-          <h4 className=" text-2xl">Skills----------</h4>
+          <h4 className=" text-2xl">Skills</h4>
           <div className=" bg-white flex flex-col">
             <Skill
               title={"Languages and Databases"}
