@@ -14,13 +14,6 @@ const Projects = () => {
                 <a className=' gallery-card flex flex-col gap-4 justify-start' href="https://github.com/paawanjotk/MovieTicketBookingSystem">
                     <img  src={MTBS}/>
                 </a>
-                <div>
-                  <p className=' text-2xl font-mono font-bold'>A Quiz Web App</p>
-                  <p className=' mt-3  text-lg font-thin'>-HTML, CSS, Javascript</p>
-                </div>
-                <a className=' gallery-card flex flex-col gap-4 justify-start' href="https://github.com/paawanjotk/Quiz-App-Assignment">
-                    <img  src={quiz}/>
-                </a>
             </div>
         </div>
     </div>
