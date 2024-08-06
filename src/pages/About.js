@@ -12,7 +12,7 @@ const About = () => {
     <div className=' bg-[#010e1b] text-white h-screen flex flex-col items-center gap-8 pt-8'>
         <div className='description-container flex flex-col gap-12 align-middle justify-center w-3/6'>
             <div className='about-container flex  gap-5 flex-col'>
-                <h4 className=' text-2xl'>About---------</h4>
+                <h4 className=' text-2xl'>About</h4>
                 <div className='description flex gap-10'>
                     <img className=' w-2/6 h-auto' src={photo} alt='picture'></img>
                     <p className=' font-light text-xl antialiased text-lime-50'> 
