@@ -27,7 +27,7 @@ const About = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-5'>
-                <h4 className='text-2xl'>Interests--------</h4>
+                <h4 className='text-2xl'>Interests</h4>
                 <div className='interests-container grid grid-cols-2 gap-8'>
                     <Tile skill='Software Development' icon={<CiGlobe size={56} color='pink'/>}/>
                     <Tile skill='Machine Learning' icon={<FaDatabase size={36} color='pink' />}/>
